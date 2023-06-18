@@ -1,0 +1,1302 @@
+/* IRANSansX ***/
+
+@font-face {
+  font-family: numberfa;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../css/fonts/IRANSansXFaNum-Bold.woff") format("woff");
+}
+body {
+  margin: 0;
+  user-select: none;
+  font-family: numberfa;
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #253542;
+  height: 100vh;
+}
+#banner {
+  background-image: url("../img/IMG_20230302_184336_834.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+#closeNav {
+  color: white;
+  position: absolute;
+  cursor: pointer;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+}
+#hamIcon {
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  right: 36px;
+  top: 20px;
+}
+#banner .bannerContent {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0;
+}
+#banner .bannerContent .mt-11.mb-5 {
+  margin-top: 44px;
+  margin-bottom: 20px;
+}
+#banner .socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  margin-top: 44px;
+  color: #253542;
+}
+#banner .socials > a {
+  height: 36px;
+  width: 36px;
+  padding: 4px;
+  background-color: white;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+nav {
+  position: fixed;
+  transition: all 0.4s;
+  z-index: 49;
+  height: 100vh;
+  width: 84px;
+  background-color: #253542;
+  box-shadow: 0 0 9px gray;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.4s;
+  font-weight: bold;
+  text-align: center;
+  font-size: 13px;
+  cursor: pointer;
+  border-bottom: 2px solid white;
+  padding: 8px 0;
+}
+nav a:last-child {
+  border: none;
+}
+nav p {
+  margin: 4px;
+}
+.text-2xl {
+  font-size: 17px;
+}
+.text-5xl {
+  font-size: 27px;
+}
+#about,
+#services,
+#contact {
+  background-color: #f7f7f7;
+}
+main {
+  width: 100%;
+  max-width: 80vw;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: auto;
+  color: #253542;
+  font-weight: bold;
+  margin-top: 64px;
+}
+main .contentBlog {
+  width: 70%;
+}
+main .contentBlog h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-left: 29px;
+  margin-right: 29px;
+}
+main .contentBlog .blogDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 29px;
+  font-size: 20px;
+  opacity: 80%;
+}
+main .contentBlog .blogDetails > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+main .contentBlog .blogDescription {
+  font-size: 19px;
+  margin-left: 29px;
+  margin-right: 29px;
+}
+main .sidebarBlog {
+  width: 30%;
+}
+main .sidebarBlog > div,
+main .contentBlog > div {
+  background-color: white;
+  border-radius: 19px;
+  box-shadow: 0 0 4px gray;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.blogPadding {
+  padding: 20px;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 24px;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 40px;
+}
+.tags span {
+  border-radius: 4px;
+  box-shadow: 0 0 4px 4px lightgray;
+  font-size: 19px;
+  padding: 2px;
+}
+.shareBlog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  margin-top: 27px;
+}
+.shareBlog > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.myBlogs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.myBlogs h3 {
+  font-size: 33px;
+}
+.myBlogs p {
+  font-size: 19px;
+  opacity: 80%;
+}
+.customerComment {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+.customerComment > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.customerComment > div:first-child p {
+  margin: 0;
+  margin-top: 9px;
+  font-size: 20px;
+}
+.customerComment > div:first-child .name {
+  font-size: 22px;
+}
+.customerComment > div:first-child .date {
+  opacity: 80%;
+}
+.customerComment a {
+  border: 2px solid gray;
+  border-radius: 7px;
+  padding: 4px 7px;
+  cursor: pointer;
+  display: block;
+  transition: all 0.4s;
+}
+.customerComment a:hover {
+  background-color: #253542;
+  color: white;
+}
+.customerComment.admin {
+  border-radius: 12px;
+  box-shadow: 0 0 4px 2px lightgray;
+  padding: 19px;
+  margin-top: 29px;
+  margin-right: 74px;
+}
+.writingComment h2 {
+  width: 210px;
+}
+.writingComment form {
+  margin-top: 40px;
+}
+.commentInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.writingComment form textarea {
+  background-color: transparent;
+  border: 1px solid lightgray;
+}
+.commentInput input {
+  height: 44px;
+  border-radius: 14px;
+  background-color: transparent;
+  border: 1px solid lightgray;
+}
+.writingComment form input[type="checkbox"] {
+  width: 33px;
+  font-weight: bold;
+}
+.writingComment form input[type="submit"] {
+  width: 127px;
+  background-color: #253542;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 9px 29px;
+  text-align: center;
+  border-radius: 12px;
+}
+.simillarArticles {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.simillarArticles > h2,
+.blogitle {
+  width: 129px;
+}
+.simillarArticles .mySwiper h2,
+.myBlogs span {
+  font-size: 16px;
+}
+.searchBlog h2.projectTitle {
+  width: 158px;
+  margin: 0;
+}
+.searchBlog form {
+  position: relative;
+  height: 49px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 27px;
+}
+.searchBlog form input {
+  width: 100%;
+  height: 100%;
+  background-color: lightgray;
+}
+.searchBlog form svg {
+  position: absolute;
+  left: 9px;
+  top: 12px;
+  color: gray;
+}
+#questions {
+  height: auto;
+  padding: 191px 9px 20px 9px;
+  max-width: 80vw;
+  margin: auto;
+}
+#questions p {
+  font-size: 17px;
+  font-weight: bold;
+  opacity: 80%;
+  line-height: 40px;
+}
+#accordion {
+  margin-top: 44px;
+}
+#accordion > div {
+  border-radius: 9px;
+  overflow: hidden;
+  border: 1px solid lightgrey;
+}
+.questionsTitle.skilsTitle {
+  width: 145px;
+  margin-top: 44px;
+}
+.accordionItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 9px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.accordionItem svg,
+.shareBlog a,
+input[type="submit"] {
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.accordionItem svg.active {
+  transform: rotate(180deg);
+}
+.accordionItem p {
+  margin: 0;
+  font-size: 22px !important;
+}
+.accordionContent {
+  font-size: 15px;
+  background-color: lightgrey;
+  max-height: 0;
+  transition: all 0.4s;
+  overflow: hidden;
+}
+.accordionContent.active {
+  max-height: 900px;
+  padding: 20px;
+}
+#request {
+  border-radius: 9px;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 70px;
+  gap: 20px;
+}
+#request p {
+  font-size: 21px !important;
+  opacity: 99%;
+}
+#request a {
+  color: white;
+  font-weight: bold;
+  border-radius: 7px;
+  padding: 13px 20px;
+  background-color: #253542;
+  cursor: pointer;
+  font-size: 17px;
+  width: 160px;
+  text-align: center;
+  transition: all 0.4s;
+}
+#about > div {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.right-about {
+  max-width: 42vw;
+}
+
+.left-about {
+  max-width: 54vw;
+}
+.aboutTitle,
+.skilsTitle,
+.servicesTitle,
+.projectTitle,
+.contactTitle,
+.blogitle {
+  font-weight: bold;
+  border-bottom: 1px solid #253542;
+  margin-right: 0px;
+  margin-left: auto;
+  width: 123px;
+  padding-bottom: 7px;
+  position: relative;
+  font-size: 23px;
+}
+.blogLists {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 44px;
+  margin-top: 44px;
+}
+.blogItems {
+  margin-top: 44px;
+}
+.blogItem {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  gap: 20px;
+}
+.blogItem h2 {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
+}
+.blogItem p {
+  opacity: 72%;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.blogFooter {
+  display: flex;
+  justify-content: space-between;
+  opacity: 72%;
+}
+.blogFooter .author {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.blogFooter img {
+  width: 24px !important;
+  height: 24px !important;
+  border-radius: 100%;
+  background-color: #344b5fc6;
+}
+.aboutTitle::after,
+.skilsTitle::after,
+.servicesTitle::after,
+.projectTitle::after,
+.contactTitle::after,
+.blogitle::after {
+  content: "";
+  position: absolute;
+  background-color: #253542;
+  width: 49%;
+  height: 4px;
+  right: 0;
+  bottom: 0;
+}
+.aboutHeading {
+  font-weight: bold;
+  margin-top: 41px;
+  margin-bottom: 18px;
+}
+.aboutDescription {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 8px;
+  font-weight: bold;
+  opacity: 75%;
+  line-height: 31px;
+}
+.resume {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 4px 24px;
+}
+.resume > div {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 80%;
+}
+.resume > div > div,
+.dateBlog {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.resumeDownload {
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  padding: 8px 0;
+  padding-right: 12px;
+  background-color: #253542;
+  width: 160px;
+  margin-top: 34px;
+  margin-left: auto;
+  margin-right: 0;
+  color: white;
+  font-weight: bold;
+  transition: all 0.4s;
+}
+.resumeDownload > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  transition: all 0.4s;
+  background-color: white;
+  padding: 4px;
+  color: #253542;
+}
+.resumeDownload:hover,
+#banner .socials > a:hover,
+.shareBlog a:hover,
+nav a:hover,
+.writingComment form input[type="submit"]:hover,
+nav a.active,
+#request a:hover,
+.projectForm input[type="submit"]:hover,
+.accordionItem:hover {
+  color: #fd841f;
+}
+#skils,
+.ProjectTabContent a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#skils > div,
+#about > div,
+#services > div,
+#projects > div,
+#contact > div,
+#projects > div,
+#articles > div,
+#projectDetails > div {
+  max-width: 80vw;
+}
+#projectDetails h3 {
+  text-align: right;
+}
+#projectDetails > div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 314px;
+  gap: 25px;
+}
+.skilsTitle,
+.servicesTitle,
+.servicesTitle,
+.projectTitle,
+.contactTitle {
+  width: 106px;
+  margin: auto;
+  font-size: 23px;
+}
+.projectTitle.single {
+  width: 240px;
+}
+.skilsHeading {
+  font-weight: bold;
+  opacity: 75%;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 80px;
+  font-size: 18px;
+}
+.skilsDetails {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 80px;
+  align-items: center;
+  margin-top: 80px;
+}
+.skilsDetails > div:first-child > div {
+  margin-bottom: 36px;
+}
+.skilsDetails > div:first-child > div span {
+  display: block;
+  font-weight: bold;
+}
+.skilsDetails > div:first-child > div > div {
+  height: 6px;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+.skilsDetails > div:first-child > div > div > div {
+  height: 100%;
+  width: 44%;
+  background-color: #253542;
+  transition: all 0.4s;
+}
+.skilsDetails > div:first-child > div > div > label {
+  background-color: #eee;
+  width: 29px;
+  height: 26px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  font-size: 11px;
+}
+.skilsDetails > div:last-child > div {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 48px;
+}
+.skilsDetails > div:last-child > div > div {
+  border: 4px solid #253542;
+  border-radius: 80px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.skilsDetails > div:last-child > div > div svg {
+  color: #253542;
+  display: block;
+  margin: auto;
+}
+.skilsDetails > div:last-child > div > div > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #253542;
+  font-weight: bold;
+  margin-top: 12px;
+}
+#services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+}
+.servicesItems {
+  display: grid;
+  grid-template-columns: 40vw 40vw;
+  color: #253542;
+  font-weight: bold;
+  margin-top: 80px;
+  gap: 56px;
+}
+.itemsServices {
+  display: flex;
+  justify-content: right;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.projectDetailsTitle {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  font-size: 21px;
+  gap: 9px;
+  opacity: 87%;
+}
+.projectDetailsTitle.solid {
+  margin-top: 23px;
+}
+.projectForm {
+  opacity: 87%;
+  margin-top: 20px;
+}
+.projectForm span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 19px;
+}
+.projectForm div {
+  margin-bottom: 8px;
+}
+.projectForm input[type="checkbox"] {
+  width: 33px;
+  font-weight: bold;
+}
+.projectForm input[type="submit"] {
+  width: 127px;
+  background-color: #253542;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 9px 29px;
+  text-align: center;
+  transition: all 0.4s;
+}
+.saveEmailLabel {
+  font-size: 16px;
+  color: lightgray;
+  font-weight: bold;
+  margin: 18px 0;
+  display: block;
+}
+.projectForm input,
+.projectForm textarea {
+  margin: 0;
+  padding: 9px;
+  border-radius: 9px;
+}
+.points {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  gap: 2px;
+  margin-top: 24px;
+}
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #fd841f;
+}
+.projectDetailsTitle h3,
+.projectDetailsTitle h5 {
+  margin: 9px;
+}
+.itemsServices svg {
+  color: #253542;
+  flex-shrink: 0;
+}
+.projectsParent {
+  margin-top: 24px;
+}
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 22px;
+}
+.tabs > span {
+  color: gray;
+  padding-bottom: 8px;
+  cursor: pointer;
+  transition: all 0.4s;
+  position: relative;
+  font-weight: bold;
+}
+.tabs > span:hover,
+.tabs > span.active {
+  color: #253542 !important;
+}
+.tabs > span::after {
+  background-color: #253542;
+  height: 4px;
+  position: absolute;
+  content: "";
+  width: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.4s;
+}
+.tabs > span:hover::after,
+.tabs > span.active::after {
+  width: 100% !important;
+}
+
+.ProjectTabContent > div {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 28px 56px;
+}
+.projectsParent.desktop .ProjectTabContent > div > div {
+  position: relative;
+  cursor: pointer;
+  border-radius: 22px;
+  overflow: hidden;
+}
+.projectsParent.desktop .ProjectTabContent > div > div:hover > div,
+.swiper-slide > div:hover .lightBox,
+.mySwiper2 img,
+.mySwiper3 img,
+.right-about > img,
+.skilsDetails > div,
+.blogImg {
+  width: 100%;
+}
+.ProjectTabContent > div > div img {
+  width: 100%;
+  height: 100%;
+}
+.projectsParent.desktop .ProjectTabContent > div > div > div,
+.lightBox {
+  position: absolute;
+  border-radius: 13px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 0;
+  transition: all 0.4s;
+  overflow: hidden;
+  inset: 0;
+  background-color: black;
+  opacity: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.ProjectTabContent > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 32px;
+  color: #253542;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.4s;
+}
+.ProjectTabContent > a:hover,
+footer > div > div a:hover,
+#contact input[type="submit"]:hover {
+  color: #fd841f;
+}
+
+.mobile,
+.mobileFormImg {
+  display: none;
+}
+#contact > div > div {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  border-radius: 27px;
+  overflow: hidden;
+  background-color: white;
+}
+#contact form {
+  padding: 20px 40px;
+}
+.inputBox.first {
+  margin-top: 29px;
+}
+.inputBox {
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 49px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.inputBox > div {
+  background-color: #f7f7f7;
+  height: 100%;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  background-color: rgb(251, 251, 251);
+  flex-grow: 1;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-right: 12px;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+}
+input::placeholder,
+textarea {
+  color: rgb(183, 181, 181);
+  font-size: 16px;
+}
+textarea {
+  background-color: rgb(251, 251, 251);
+  margin-bottom: 32px;
+  padding-top: 12px;
+  border-radius: 18px;
+  font-size: 18px;
+  width: 100%;
+  font-weight: bold;
+  outline: none;
+  resize: none;
+  border: none;
+}
+#contact input[type="submit"] {
+  width: 100%;
+  background-color: #253542;
+  border-radius: 44px;
+  padding: 17px 0;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 17px;
+  transition: all 0.4s;
+}
+#contact .imgBox,
+#contact img,
+.blogDesc > div > img {
+  width: 100%;
+  height: 100%;
+}
+.blogProject {
+  height: auto;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+#articles img {
+  width: 100%;
+  border-radius: 28px;
+}
+#articles .swiper-slide > div > div,
+.blogDesc {
+  color: #253542;
+  padding: 28px;
+  border-radius: 28px;
+  box-shadow: 0 0 4px gray;
+  width: 78% !important;
+  margin: -80px auto auto auto;
+  background-color: white;
+  position: relative;
+}
+.blogsBanner {
+  height: auto;
+  max-width: 80vw;
+  margin: 80px auto;
+}
+.blogDesc {
+  font-size: 10px;
+}
+.blogBannerTop {
+  display: grid;
+  grid-template-columns: 67% 30%;
+  gap: 35px;
+  width: 80vw;
+}
+.blogBannerBottom {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 44px;
+  width: 80vw;
+  justify-content: space-between;
+}
+.parent {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 44px;
+}
+.blogBannerTop .parent img,
+.blogBannerBottom .parent img {
+  width: 100%;
+  height: 100%;
+}
+.label {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffffbd;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+.blogBannerTop > div p,
+.blogBannerBottom > div p {
+  margin: 0;
+  color: #253542;
+  font-size: 20px;
+}
+#articles .mySwiper {
+  padding: 29px 0;
+}
+#articles .mySwiper p {
+  font-weight: bold;
+  opacity: 75%;
+  margin-top: 20px;
+  font-size: 12px;
+}
+#articles .swiper-slide > div > div > div,
+.blogAuthor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-weight: bold;
+  gap: 9px;
+}
+#articles .swiper-slide > div > div > div > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: bold;
+  color: gray;
+}
+#articles .swiper-slide > div > div > div > div:first-child img {
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 100%;
+  background-color: grey;
+}
+#articles .swiper-slide > div > div > div > div:last-child {
+  display: flex;
+  align-items: center;
+  color: grey;
+  gap: 8px;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0;
+  background-color: #253542;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+footer > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  margin-bottom: 36px;
+  color: #253542;
+}
+footer > div > div a {
+  width: 44px;
+  height: 44px;
+  padding: 4px;
+  background-color: white;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+@media only screen and (min-width: 1400px) {
+  .ProjectTabContent > div {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+@media only screen and (max-width: 1590px) {
+  main .contentBlog {
+    width: 60%;
+  }
+  main .sidebarBlog {
+    width: 40%;
+  }
+  main .contentBlog h1 {
+    font-size: 25px;
+  }
+  main .contentBlog .blogDetails {
+    gap: 22px;
+    font-size: 16px;
+  }
+  .myBlogs p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .projectDetailsTitle.solid {
+    margin-top: 22px;
+  }
+  .projectDetailsTitle {
+    font-size: 18px;
+  }
+  .saveEmailLabel {
+    font-size: 15px;
+  }
+  main {
+    flex-direction: column;
+    margin: 64px auto;
+  }
+  main .contentBlog {
+    width: 100%;
+    order: 2;
+  }
+  main .contentBlog .blogDetails {
+    gap: 29px;
+  }
+  main .sidebarBlog {
+    width: 100%;
+    order: 1;
+  }
+  .blogLists {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .simillarProjects,
+  #projectDetails {
+    height: auto;
+    margin: 74px 0;
+  }
+  .blogProject {
+    margin-top: 0;
+  }
+  .blogBannerTop {
+    grid-template-columns: auto auto;
+  }
+  #questions {
+    padding-top: 40px;
+  }
+  #request a {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 86%;
+  }
+  #banner {
+    justify-content: center;
+  }
+  nav {
+    right: -144px;
+  }
+  nav.active {
+    right: 0;
+  }
+  #closeNav,
+  #projectDetails > div,
+  #request {
+    display: block;
+  }
+  nav p,
+  .bannerLeft {
+    display: none;
+  }
+  #projectDetails > div {
+    margin-top: 0;
+  }
+  #projectDetails > div > div {
+    width: 100% !important;
+  }
+  .blogLists {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (max-width: 840px) {
+  #banner {
+    flex-direction: column-reverse;
+    height: 100vh;
+    background-position-x: -149px;
+  }
+  #banner .bannerContent {
+    margin-bottom: 163px;
+  }
+  .blogsBanner {
+    margin-bottom: 0;
+  }
+  #about > div {
+    flex-direction: column;
+  }
+  .skilsDetails,
+  .mobile,
+  .resume,
+  .servicesItems,
+  .mobileFormImg {
+    display: block;
+  }
+  .mobileFormImg {
+    border-radius: 44px;
+    margin-top: 29px;
+  }
+  .skilsDetails > div:last-child > div {
+    margin-top: 106px;
+  }
+  section {
+    height: auto;
+    padding: 49px;
+  }
+  .aboutTitle {
+    margin: auto;
+  }
+  .resumeDownload {
+    margin: auto;
+    margin-top: 13px;
+  }
+  .aboutHeading {
+    font-size: 18px;
+  }
+  .left-about {
+    max-width: 100%;
+  }
+  .desktop,
+  .imgBox {
+    display: none;
+  }
+  .accordionItem p {
+    font-size: 14px !important;
+  }
+  main .contentBlog .blogDetails {
+    gap: 29px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 29px;
+  }
+  .myBlogs {
+    flex-direction: column;
+    text-align: center;
+  }
+  .blogLists,
+  .blogBannerTop,
+  .blogBannerBottom {
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .skilsDetails > div:last-child > div > div {
+    height: 77px;
+    width: 100%;
+  }
+  .skilsDetails > div:last-child > div > div > div > div {
+    font-size: 12px;
+  }
+  #banner {
+    background-position-x: -296px;
+  }
+  #request a {
+    width: 87%;
+  }
+  footer,
+  .blogItem h2 {
+    font-size: 13px;
+  }
+  #hamIcon {
+    right: 11px;
+  }
+  main {
+    max-width: 92vw;
+  }
+  .shareBlog,
+  .commentInput {
+    flex-direction: column;
+  }
+  .customerComment.admin {
+    margin-right: 0;
+  }
+  #articles > div {
+    max-width: 90vw;
+  }
+  #request p {
+    text-align: center;
+  }
+}
